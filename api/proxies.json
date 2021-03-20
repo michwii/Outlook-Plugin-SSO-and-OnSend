@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "proxy-authenticate": {
+            "matchCondition": {
+                "route": "/api/authenticate",
+                "methods": [
+                    "POST"
+                ]
+            },
+            "backendUri": "https://secure-email-attachment.azurewebsites.net/api/HttpTrigger1?code=MTy/LRYvTyzTpj3kJxo3zD7chljFD9DpsiHdV0e8Hk/A2CCthPldMw=="
+        },
+        "proxy-static": {
+            "matchCondition": {
+                "route": "/{*restOfPath}"
+            },
+            "backendUri": "https://staticplugin.z6.web.core.windows.net/{restOfPath}"
+        }
+    }
+}
