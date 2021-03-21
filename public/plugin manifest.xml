@@ -8,15 +8,13 @@
 
   <Id>D0590B2A-0CB8-4B4F-AD70-C520AFA6E3FC</Id>
   <Version>1.0</Version>
-  <ProviderName>Secure-email-attachment</ProviderName>
+  <ProviderName>Plugin Name Here</ProviderName>
   <DefaultLocale>en-us</DefaultLocale>
   <DisplayName DefaultValue="Secure Email Attachment" />
   <Description DefaultValue="Transform unsecure attachments into secure links" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>https://plugin.secure-mail-attachment.com</AppDomain>
-    <AppDomain>https://plugin.secure-email-attachment.com</AppDomain>
-    <AppDomain>https://graph.microsoft.com</AppDomain>
+    <AppDomain>https://your-domain-here.com</AppDomain>
   </AppDomains>
 
 
@@ -29,7 +27,7 @@
   <FormSettings>
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://plugin.secure-mail-attachment.com/index.html" />
+        <SourceLocation DefaultValue="https://your-domain-here/index.html" />
       </DesktopSettings>
     </Form>
   </FormSettings>
@@ -65,12 +63,12 @@
       <Resources>
         <bt:Urls>
            <!-- The JavaScript code is hosted on a secure and trusted web server. -->
-          <bt:Url id="residUILessFunctionFileUrl" DefaultValue="https://plugin.secure-mail-attachment.com/index.html" ></bt:Url>
+          <bt:Url id="residUILessFunctionFileUrl" DefaultValue="https://your-domain-here/index.html" ></bt:Url>
         </bt:Urls>
       </Resources>
       <WebApplicationInfo>
-        <Id>08bbbb87-f561-49c5-b8b7-f9cbd2a096ed</Id>
-        <Resource>api://plugin.secure-mail-attachment.com/08bbbb87-f561-49c5-b8b7-f9cbd2a096ed</Resource>
+        <Id>your-application-id-here</Id>
+        <Resource>api://your-domain-here/your-application-id-here</Resource>
             <Scopes>
               <Scope>email</Scope>
               <Scope>offline_access</Scope>
